@@ -1,0 +1,39 @@
+{
+  "NextJS getInitialProps": {
+    "prefix": "n_gip",
+    "body": ["$1.getInitialProps = async ctx => {", "  $2", "  return {}", "};"],
+    "description": "Doc: https://nextjs.org/docs/api-reference/data-fetching/getInitialProps"
+  },
+  "NextJS getStaticProps": {
+    "prefix": "n_gspr",
+    "body": ["export const getStaticProps = async context => {", "  $2", "  return {", "    props: {},", "  }", "};"],
+    "description": "Doc: https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation"
+  },
+  "NextJS getStaticPaths": {
+    "prefix": "n_gspa",
+    "body": [
+      "export const getStaticPaths = async () => {",
+      "  $2",
+      "  return {",
+      "    paths: [",
+      "      { params: { id: '1' } }",
+      "    ],",
+      "   fallback: false,",
+      "  }",
+      "};"
+    ],
+    "description": "Doc: https://nextjs.org/docs/basic-features/data-fetching#getstaticpaths-static-generation"
+  },
+  "NextJS getServerSideProps": {
+    "prefix": "n_gssp",
+    "body": [
+      "export const getServerSideProps = async context => {",
+      "  $2",
+      "  return {",
+      "    props: {},",
+      "  }",
+      "};"
+    ],
+    "description": "Doc: https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering"
+  }
+}
